@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats preview card component</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <main class="stats-preview-card">
+    <picture class="stats-preview-card__picture">
+      <source srcset="img/card-img-desktop.jpg 1x, img/card-img-desktop@2x.jpg 2x" media="(min-width:60em)">
+      <img class="stats-preview-card__img" src="img/card-img.jpg" alt="" width="327" height="240" srcset="img/card-img.jpg 1x, img/card-img@2x.jpg 2x">
+    </picture>
+    <div class="stats-preview-card__body">
+      <h1 class="stats-preview-card__heading">Get <span class="stats-preview-card__highlight">insights</span> that help your business grow.</h1>
+      <p class="stats-preview-card__text">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+      <dl class="stats-preview-card__stats">
+        <div class="stats-preview-card__stats-group">
+          <dt class="stats-preview-card__title">Companies</dt>
+          <dd class="stats-preview-card__value">10k+</dd>
+        </div>
+        <div class="stats-preview-card__stats-group">
+          <dt class="stats-preview-card__title">Templates</dt>
+          <dd class="stats-preview-card__value">314</dd>
+        </div>
+        <div class="stats-preview-card__stats-group">
+          <dt class="stats-preview-card__title">Queries</dt>
+          <dd class="stats-preview-card__value">12M+</dd>
+        </div>
+      </dl>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
